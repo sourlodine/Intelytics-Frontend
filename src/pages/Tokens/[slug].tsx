@@ -1,9 +1,8 @@
 import { useRouter } from "next/router";
-import { contents } from "./content";
-import axios from "axios";
+import { contents } from "@/utils/content";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Chart as ChartJs,
   CategoryScale,
@@ -16,7 +15,6 @@ import {
   LineElement,
 } from "chart.js";
 
-import { Line } from "react-chartjs-2";
 import TradingChart from "@/components/Chart";
 
 ChartJs.register(
